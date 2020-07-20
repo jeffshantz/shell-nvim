@@ -4,6 +4,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'chriskempson/base16-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'SirVer/ultisnips'
+
+Plug 'neoclide/jsonc.vim'
 
 " Use release branch (Recommend)
 Plug 'neoclide/coc.nvim',     {'branch': 'release'}
@@ -18,7 +21,7 @@ Plug 'neoclide/coc-css',      {'do': 'yarn install --frozen-lockfile'}
 "Plug 'neoclide/coc-pairs',     {'do': 'yarn install --frozen-lockfile'}
 "Plug 'neoclide/coc-python',     {'do': 'yarn install --frozen-lockfile'}
 "Plug 'neoclide/coc-highlight',  {'do': 'yarn install --frozen-lockfile'}
-"Plug 'neoclide/coc-snippets',  {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-snippets',  {'do': 'yarn install --frozen-lockfile'}
 "Plug 'neoclide/coc-lists',  {'do': 'yarn install --frozen-lockfile'}
 "Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}
 "Plug 'neoclide/coc-yank', {'do': 'yarn install --frozen-lockfile'}
