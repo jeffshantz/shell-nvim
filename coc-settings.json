@@ -1,5 +1,26 @@
 {
   "tsserver.npm": "/usr/bin/npm",
+  "diagnostic.checkCurrentLine": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "json",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "python.pythonPath": "/home/jeff/miniconda3/envs/py3neovim/bin/python",
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnType": true,
+  "eslint.enable": true,
+  "eslint.format.enable": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "yaml.schemas": {
     "https://raw.githubusercontent.com/awslabs/goformation/master/schema/cloudformation.schema.json": "/template.yml",
     "https://raw.githubusercontent.com/docker/cli/master/cli/compose/schema/data/config_schema_v3.9.json": "/docker-compose.yml"

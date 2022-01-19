@@ -13,6 +13,10 @@ syntax on                           " syntax highlighing
 filetype on                         " try to detect filetypes
 filetype plugin indent on           " enable loading indent file for filetype
 
+" https://thoughtbot.com/blog/modern-typescript-and-react-development-in-vim
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
 " ##############################################################################
 " # Colour scheme                                                              #
 " ##############################################################################

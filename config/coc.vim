@@ -1,3 +1,14 @@
+"if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
+"  let g:coc_global_extensions += ['coc-prettier']
+"endif
+
+"if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+"  let g:coc_global_extensions += ['coc-eslint']
+"endif
+"
+let g:coc_node_path = '/home/jeff/.nvm/versions/node/v14.15.4/bin/node'
+
+
 " if hidden is not set, TextEdit might fail.
 set hidden
 
@@ -51,6 +62,13 @@ nmap <silent> gr <Plug>(coc-references)
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
+" Remap for rename current word
+nmap <leader>rn <Plug>(coc-rename)
+
+" Remap for format selected region
+xmap <leader>p <Plug>(coc-format-selected)
+nmap <leader>p <Plug>(coc-format-selected)
+
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
@@ -61,13 +79,6 @@ endfunction
 
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
-
-" Remap for rename current word
-nmap <leader>rn <Plug>(coc-rename)
-
-" Remap for format selected region
-xmap <leader>f <Plug>(coc-format-selected)
-nmap <leader>f <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
