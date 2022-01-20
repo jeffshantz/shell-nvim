@@ -6,8 +6,7 @@
 "  let g:coc_global_extensions += ['coc-eslint']
 "endif
 "
-let g:coc_node_path = '/home/jeff/.nvm/versions/node/v14.15.4/bin/node'
-
+let g:coc_node_path='/home/jeff/.nvm/versions/node/v16.13.2/bin/node'
 
 " if hidden is not set, TextEdit might fail.
 set hidden

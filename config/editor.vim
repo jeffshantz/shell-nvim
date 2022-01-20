@@ -22,13 +22,12 @@ set hlsearch                   " Highlight search results
 set incsearch                  " Enable incremental searching
 
 " ##############################################################################
-" # Python Bindings                                                            #
+" # Language Bindings                                                          #
 " ##############################################################################
 
-let g:python_host_prog='/home/jeff/miniconda3/envs/py2neovim/bin/python'
-let g:python3_host_prog='/home/jeff/miniconda3/envs/py3neovim/bin/python'
-
-let g:node_host_prog='/home/jeff/.nvm/versions/node/v14.15.4/bin/neovim-node-host'
+"let g:python_host_prog='/home/jeff/miniconda3/envs/py2neovim/bin/python'
+let g:python3_host_prog='/usr/bin/python3'
+let g:node_host_prog='/home/jeff/.nvm/versions/node/v16.13.2/bin/neovim-node-host'
 
 " ##############################################################################
 " # Easy alignmnent.  Use gaip= or vipga=                                      #
